@@ -1,11 +1,358 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Marah Taqatqa - Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marah Taq - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            border-bottom: 1px solid #e0e0e0;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.2em;
+            margin-bottom: 8px;
+            color: #1a1a1a;
+        }
+
+        header p {
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .seeking {
+            margin-top: 20px;
+            padding: 12px 20px;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            display: inline-block;
+            font-size: 0.95em;
+        }
+
+        nav {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.95em;
+        }
+
+        nav a:hover {
+            color: #000;
+            text-decoration: underline;
+        }
+
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 30px;
+            color: #1a1a1a;
+        }
+
+        .project {
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .project:last-child {
+            border-bottom: none;
+        }
+
+        .project h3 {
+            font-size: 1.3em;
+            margin-bottom: 5px;
+        }
+
+        .project-meta {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .tech {
+            display: inline-block;
+            background-color: #f0f0f0;
+            padding: 4px 10px;
+            margin: 8px 8px 8px 0;
+            border-radius: 3px;
+            font-size: 0.85em;
+            color: #555;
+        }
+
+        .project-image {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+        }
+
+        .image-placeholder {
+            background-color: #f8f8f8;
+            border: 2px dashed #ddd;
+            padding: 40px 20px;
+            text-align: center;
+            margin: 20px 0;
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        .link-button {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        .link-button:hover {
+            background-color: #000;
+        }
+
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-item {
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 4px;
+        }
+
+        .skill-item strong {
+            display: block;
+            margin-bottom: 5px;
+            color: #1a1a1a;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .contact-links a {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        .contact-links a:hover {
+            background-color: #000;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px 20px;
+            color: #999;
+            font-size: 0.9em;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Marah Taqatqa</h1>
-    <p>Electrical Engineering Student at Northwestern University</p>
+    <header>
+        <h1>Marah Taq</h1>
+        <p>Electrical Engineer</p>
+        <p>Northwestern University | Class of 2028</p>
+        <div class="seeking">
+            Seeking Spring/Summer 2026 Co-Op & Internship Opportunities
+        </div>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>Electrical engineering student at Northwestern with hands-on experience in PCB design, high-voltage Systems, and harness manufacturing. Currently working on High Voltage Electronics Team for our Formula Racing team, looking for  .</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>High-Voltage Battery Management PCB</h3>
+            <p class="project-meta">Northwestern Formula Racing | Sep 2026 - Present</p>
+            <div>
+                <span class="tech">Altium Designer</span>
+                <span class="tech">PCB Layout</span>
+                <span class="tech">SPI</span>
+                <span class="tech">High Voltage</span>
+            </div>
+            <p>Designing PCB layout for battery monitoring daughterboards in our electric race car's 400V+ system. Applied constraint-driven layout with DRC rules for clearance and signal integrity for voltage sensing and SPI communication.</p>
+            
+            <div class="image-placeholder">
+                [Add PCB layout image]<br>
+                &lt;img src="pcb-layout.png" alt="PCB Layout" class="project-image"&gt;
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Vehicle Power Distribution Harness</h3>
+            <p class="project-meta">Northwestern Formula Racing | Sep 2024 - June 2025</p>
+            <div>
+                <span class="tech">RapidHarness</span>
+                <span class="tech">CAN Bus</span>
+                <span class="tech">TSMaster</span>
+                <span class="tech">Manufacturing</span>
+            </div>
+            <p>Designed and manufactured the backbone electrical harness for NFR25, connecting 80+ signals across subsystems. Performed CAN testing..</p>
+            
+            <div class="image-placeholder">
+                [Add harness photo]<br>
+                &lt;img src="harness.jpg" alt="Harness" class="project-image"&gt;
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>Lx2POD: Locomotion Data Collection System</h3>
+            <p class="project-meta">Institute for Computing in Research | Summer 2023</p>
+            <div>
+                <span class="tech">Circuit Design</span>
+                <span class="tech">Python</span>
+                <span class="tech">Sensor Integration</span>
+            </div>
+            <p>Developed open-source wearable system integrating IMU sensors for human locomotion research. Designed sensor interface circuit, created Python data processing pipeline, and documented process for open-source release.</p>
+            
+            <div class="image-placeholder">
+                [Add circuit/system photo]<br>
+                &lt;img src="lx2pod.jpg" alt="Lx2POD System" class="project-image"&gt;
+            </div>
+        </div>
+
+        <div class="project">
+            <h3>PoweReg: Automated Oxygen Tank System</h3>
+            <p class="project-meta">Design Course - Lurie Children's Hospital | Fall 2024</p>
+            <div>
+                <span class="tech">Motor Control</span>
+                <span class="tech">Power Systems</span>
+                <span class="tech">Prototyping</span>
+            </div>
+            <p>Designed electromechanical system automating oxygen tank setup for hospital emergency response. Selected and integrated motors, designed power distribution, and circuit design..</p>
+            
+            <div class="image-placeholder">
+                [Add prototype photo]<br>
+                &lt;img src="powereg.jpg" alt="PoweReg Prototype" class="project-image"&gt;
+            </div>
+            
+            <a href="powereg-report.pdf" class="link-button" target="_blank">View Design Report</a>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div class="skill-item">
+                <strong>Programming</strong>
+                Python, C/C++, CircuitPython
+            </div>
+            <div class="skill-item">
+                <strong>Engineering Tools</strong>
+                Altium Designer, RapidHarness, TSMaster, MATLAB
+            </div>
+            <div class="skill-item">
+                <strong>Protocols</strong>
+                CAN, SPI, UART
+            </div>
+            <div class="skill-item">
+                <strong>Systems</strong>
+                Linux, Git, Command Line
+            </div>
+            <div class="skill-item">
+                <strong>Manufacturing</strong>
+                Harness Fabrication, Soldering, PCB Assembly
+            </div>
+        </div>
+	        <div class="project">
+            <h3>StairGlide: Stairwell Transport Assist Device</h3>
+            <p class="project-meta">Design Course II | April 2025 - June 2025</p>
+            <div>
+                <span class="tech">Mechanical Design</span>
+                <span class="tech">Safety Systems</span>
+                <span class="tech">Prototyping</span>
+            </div>
+            <p>Designed electromechanical assist device for safely transporting objects up and down stairwells. Focused on mechanical linkage design, safety mechanisms, and usability testing based on client requirements.</p>
+            
+            <div class="image-placeholder">
+                [Add prototype photo]<br>
+                &lt;img src="stairglide.jpg" alt="StairGlide Prototype" class="project-image"&gt;
+            </div>
+            
+            <a href="stairglide-report.pdf" class="link-button" target="_blank">View Design Report</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Looking for Spring/Summer 2026 opportunities in electrical engineering, PCB design, or embedded systems.</p>
+        <div class="contact-links">
+            <a href="mailto:marahtaqatqa2028@u.northwestern.edu">Email</a>
+            <a href="https://linkedin.com/in/marah-taqatqa" target="_blank">LinkedIn</a>
+            <a href="https://github.com/MarahTaq" target="_blank">GitHub</a>
+            <a href="resume.pdf" target="_blank">Resume</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Marah Taq</p>
+    </footer>
 </body>
 </html>
